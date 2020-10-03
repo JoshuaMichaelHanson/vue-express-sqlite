@@ -8,6 +8,25 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'app',
+  data () {
+    return {
+      activeUser: null
+    }
+  },
+  async refreshActiveuser () {
+    this.activeUser = await this.$auth.getUser()
+  },
+  async logout () {
+    await this.$auth.logout()
+    await this.refreshActiveuser()
+    this.$router.push('/')
+  }
+}
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

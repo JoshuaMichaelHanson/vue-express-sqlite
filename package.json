@@ -9,6 +9,7 @@
     "start": "npm run serve"
   },
   "dependencies": {
+    "@okta/okta-vue": "^2.1.1",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.17.3",
     "core-js": "^3.6.5",

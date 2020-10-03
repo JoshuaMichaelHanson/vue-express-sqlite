@@ -1,3 +1,8 @@
+This is a Vue2 Router Bootstrap 4 <br/>
+Project that can be run on Glitch.com <br/>
+Modify the vue.config.js <br/>
+public: 'your-name.glitch.me:3000'
+
 # vue-express-sqlite
 
 ## Project setup
